@@ -864,7 +864,7 @@
  * the position of the toolhead relative to the workspace.
  */
 
-#define SENSORLESS_BACKOFF_MM  { 5, 5, 0 }     // (mm) Backoff from endstops before sensorless homing
+// #define SENSORLESS_BACKOFF_MM  { 5, 5, 0 }     // (mm) Backoff from endstops before sensorless homing
 
 #define HOMING_BUMP_MM      { 5, 5, 2 }       // (linear=mm, rotational=°) Backoff from endstops after first bump
 #define HOMING_BUMP_DIVISOR { 2, 2, 4 }       // Re-Bump Speed Divisor (Divides the Homing Feedrate)
@@ -1350,9 +1350,9 @@
        * For example, with an offset of -5, consider a starting height of -4.
        */
       #define XATC_START_Z 0.0
-      #define XATC_MAX_POINTS 3             // Number of points to probe in the wizard
+      #define XATC_MAX_POINTS 5             // Number of points to probe in the wizard
       #define XATC_Y_POSITION Y_CENTER      // (mm) Y position to probe
-      #define XATC_Z_OFFSETS { 0, 0, 0 }    // Z offsets for X axis sample points
+      #define XATC_Z_OFFSETS { 0, 0, 0, 0, 0 }    // Z offsets for X axis sample points
     #endif
 
     // Show Deploy / Stow Probe options in the Motion menu.
